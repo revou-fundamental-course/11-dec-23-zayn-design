@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+
+    <link rel="stylesheet" href="style/style.css">
+
+    <!-- font awesome => icon -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- navbar -->
+<nav>
+        <div class="container">
+        <div class="nav-logo">
+            <a href="https://revou.co/" target="_blank">
+            <img src="https://s3-ap-southeast-1.amazonaws.com/revou-blog/2019/12/Logo-RevoU-5.png" alt="RevoU" width="50">
+            </a>
+        </div>
+        <div class="nav-menu">
+            <ul>
+            <li><a href="#index">Home</a></li>
+            <li><a href="#profile">Our Profile</a></li>
+            <li><a href="#portofolio">Portofolio</a></li>
+            <li><a href="#message">Message Us</a></li>
+            </ul>
+        </div>
+        </div>
+</nav>
+<!-- navbar -->
+
+<!-- header -->
+<header>
+        <div class="container">
+        <div class="header-judul">
+            <h1>Halo <span id="username"></span>, Welcome To My Website</h1>
+            <p>Ini adalah website latihan yang ke-banyak saya hehe.</p>
+        </div>
+        </div>
+</header>
+<!-- header -->
+
+
+<!-- headquarter -->
+<main class="headquarter">
+        <div class="container">
+        <div class="headquarter-judul">
+            <h1>Our Headquarter</h1>
+        </div>
+        <div class="headquarter-kota">
+            <div class="bulat">
+            <img src="bahan/jkt.jpg" alt="kota 1" width="100">
+            <p>Jakarta</p>
+            </div>
+            <div class="bulat">
+            <img src="bahan/bdg.jpg" alt="kota 1" width="100">
+            <p>Bandung</p>
+            </div>
+            <div class="bulat">
+            <img src="bahan/smg.jpg" alt="kota 1" width="100">
+            <p>Semarang</p>
+            </div>
+            <div class="bulat">
+            <img src="bahan/mdn.jpg" alt="kota 1" width="100">
+            <p>Medan</p>
+            </div>
+        </div>
+        <div class="headquarter-quote">
+            <marquee behavior="" direction="" width="100%" vspace="20px">Terimakasih telah berkunjung......</marquee>
+        </div>
+        </div>
+</main>
+<!-- headquarter -->
+
+<!-- navbar -->
+\<main>
+        <div class="container">
+          <div class="main-judul">
+            <h1>Profil Saya</h1>
+          </div>
+          <div class="main-isi">
+            <div class="main-foto">
+              <img src="bahan/saya.png" >
+              <br>
+              <span>Student | Telkom University</span>
+            </div>
+            <div class="main-about">
+              <p>Hallo, perkenalkan nama saya Adul Hakim,Saya adalah mahasiswa S-1 Teknik Komputer di Universitas Telkom, lahir pada 13 Juli 2003, dengan pengalaman dalam berbagai kegiatan panitia kemahasiswaan. Saya memiliki ketertarikan kuat dalam pengembangan diri dan organisasi kemahasiswaan. Saya merupakan bagian dari panitia Telkom University Esport, bertanggung jawab dalam acara Connection HMTK 2023. Selain itu, saya memiliki pengalaman sebagai Public Relations di Pemuda Al-irsyad dan memimpin Divisi Olahraga di OPMAA. Saya aktif mengikuti pelatihan, termasuk pemrograman HTML & CSS serta Dart di Dicoding. Dengan kemampuan bekerja sama yang baik, sikap terbuka terhadap pembelajaran, dan kemampuan berbahasa Indonesia, Inggris, dan Arab, saya memiliki keterampilan yang lengkap sesuai dengan perjalanan akademis dan organisasional saya.</p>
+            </div>
+          </div>
+        </div>
+</main>
+
+<main>
+        <div class="container">
+          <div class="main-judul">
+            <h1>Portofolio Saya</h1>
+            <p>Berikut Sertifikat portofolio yang telah saya capai :</p>
+          </div>
+          <div class="main-isi">
+            <div class="main-isi-portofolio">
+              <img src="bahan/pp1.png" width="500" class="img-list">
+    
+    
+              <i class="fas fa-arrow-alt-circle-left fa-3x" onclick="return plusSlide(-1);"></i>
+              <i class="fas fa-arrow-alt-circle-right fa-3x" onclick="return plusSlide(+1);"></i>
+            </div>
+            <div class="main-isi-quote">
+              <p>Jangan terlalu banyak dipikirin, lakuin aja. Entar tau2 juga udah selesai. Semangatt!</p>
+              <p>~Jerome Polin Sijabat</p>
+            </div>
+          </div>
+        </div>
+</main>
+
+<main>
+        <div class="container">
+          <div class="main-judul">
+            <h1>Isi data diri dan pesan Anda!</h1>
+          </div>
+          <div class="main-pesan">
+            <div class="main-form">
+              <form name="message-form" onsubmit="kirim(); return false">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td><label for="nama">Nama</label></td>
+                      <td>:
+                        <input type="text" name="nama" id="nama" required>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><label for="ttl">Tanggal Lahir</label></td>
+                      <td>:
+                        <input type="date" name="ttl" id="ttl" required>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td><label for="gender">Jenis Kelamin</label></td>
+                      <td>:
+                        <input type="radio" name="gender" id="laki-laki" value="Laki-laki" required><label for="laki-laki">Laki-laki</label>
+                        <input type="radio" name="gender" id="perempuan" value="Perempuan" required><label for="perempuan">Perempuan</label>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="position: absolute;"><label for="pesan">Pesan</label></td>
+                      <td>
+                        <textarea name="pesan" id="pesan" cols="30" rows="5" required></textarea>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td colspan="2">
+                        <input type="submit" name="submit" value="Kirim">
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </form>
+            </div>
+            <div class="main-data">
+              <table>
+                <tbody>
+                  <tr class="td-waktu">
+                    <td><label for="waktu">Waktu</label></td>
+                    <td>
+                      <span id="waktu"></span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><label for="nama">Nama</label></td>
+                    <td>:
+                      <span id="nama2"></span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><label for="ttl">Tanggal Lahir</label></td>
+                    <td>:
+                      <span id="ttl2"></span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><label for="gender">Jenis Kelamin</label></td>
+                    <td>:
+                      <span id="gender2"></span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><label for="pesan">Pesan</label></td>
+                    <td>:
+                      <span id="pesan2"></span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+</main>
+
+    <footer>
+    <span>Created By <a id="instagramLink" href="#" >Someone</a> | <span class="far fa-copyright"></span> All rights reserved.</span>
+    </footer>
+  <!-- footer -->
+
+
+  <!-- <script>
+    let userName = prompt("Masukkan nama Anda dibawah!");
+    document.getElementById("username").innerText = userName;
+  </script>-->
+
+  <script src="script/script.js"></script>
+
+</body>
+</html>
